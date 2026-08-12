@@ -1,0 +1,9 @@
+spacy>=3.7,<3.8
+scikit-learn>=1.3
+sentence-transformers>=2.5
+wordfreq>=3.0
+tiktoken>=0.5
+numpy>=1.24
+
+# After installing requirements, download the spaCy English model:
+#   python -m spacy download en_core_web_sm

@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import spacy, sklearn, sentence_transformers, wordfreq, tiktoken, numpy\")",
+      "Bash(pip install *)",
+      "Bash(python -m pip install -r requirements.txt)",
+      "Bash(python -m spacy download en_core_web_sm)",
+      "Bash(python -m pip show numpy thinc spacy)",
+      "Bash(python -m pip install \"numpy<2.0\")",
+      "Bash(python -m pip index versions spacy)",
+      "Bash(python -m pip index versions thinc)",
+      "Bash(python -m pip install --upgrade \"spacy>=3.8\" \"numpy>=2.0\")",
+      "Bash(python main.py \"Do not delete the production database.\")",
+      "Bash(python main.py --demo)",
+      "Bash(python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(python -m pip show spacy numpy thinc)",
+      "Bash(python -c \"import site; print\\(site.getusersitepackages\\(\\)\\)\")",
+      "Bash(python -c \"import spacy; print\\(spacy.__file__\\); print\\(spacy.__version__\\)\")",
+      "Read(//c/Users/huzai/AppData/Roaming/Python/Python312/**)",
+      "Bash(python main.py \"Please carefully analyze the customer transaction data provided below and identify any unusual or potentially fraudulent patterns. Pay particular attention to transactions that significantly differ from the customer's historical behavior and explain why those transactions should be considered unusual.\")"
+    ]
+  }
+}
