@@ -68,28 +68,14 @@ Rather than routing on category alone, a **complexity score** is computed direct
 
 ## Architecture
 
-Raw Prompt
-│
-▼
-┌─────────────────────────┐
-│ Token Importance Scorer │ (8 signals + protection layer)
-└─────────────────────────┘
-│
-▼
-Compressed Prompt + Per-Token Scores
-│
-▼
-┌─────────────────────────┐
-│ Task Classifier │ (category + complexity_score)
-└─────────────────────────┘
-│
-▼
-┌─────────────────────────┐
-│ Model Router │ (tier selection + escalation)
-└─────────────────────────┘
-│
-▼
-Selected Model
+```mermaid
+flowchart TD
+    A[Raw Prompt] --> B["Token Importance Scorer<br/>(8 signals + protection layer)"]
+    B --> C[Compressed Prompt + Per-Token Scores]
+    C --> D["Task Classifier<br/>(category + complexity_score)"]
+    D --> E["Model Router<br/>(tier selection + escalation)"]
+    E --> F[Selected Model]
+```
 
 
 ---
