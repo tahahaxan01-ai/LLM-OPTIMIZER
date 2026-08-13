@@ -4,6 +4,9 @@ sentence-transformers>=2.5
 wordfreq>=3.0
 tiktoken>=0.5
 numpy>=1.24
+fastapi>=0.110
+uvicorn>=0.27
+streamlit>=1.32
 
 # After installing requirements, download the spaCy English model:
 #   python -m spacy download en_core_web_sm
